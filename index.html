@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Technical Documentation page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main-doc">
+      <div class="navbar">
+        <nav id="navbar">
+          <header>Python Documentation</header>
+          <ul>
+            <li><a href="#introduction" class="nav-link">introduction</a></li>
+            <li><a href="#hello_world" class="nav-link">hello world</a></li>
+            <li><a href="#variables" class="nav-link">variables</a></li>
+            <li><a href="#data_types" class="nav-link">data types</a></li>
+            <li><a href="#statements" class="nav-link">statements</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="sections">
+        <section class="main-section" id="introduction">
+          <header>Introduction</header>
+          <p>Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming.</p>
+          <p>Guido van Rossum began working on Python in the late 1980s as a successor to the ABC programming language and first released it in 1991 as Python 0.9.0. Python 2.0 was released in 2000. Python 3.0, released in 2008, was a major revision not completely backward-compatible with earlier versions. Python 2.7.18, released in 2020, was the last release of Python 2.</p>
+          <p>Python consistently ranks as one of the most popular programming languages.</p>
+        </section>
+        <section class="main-section" id="hello_world">
+          <header>Hello World</header>
+          <p>To get started, you will need to have a code editor and python installed. For this example, we will use VS Code. Go to this <a href="https://code.visualstudio.com/docs/python/python-tutorial">link</a> on VS Code's website and follow the instructions to download VS Code and Python.</p>
+          <p>To get started with writing Python, write your first "Hello world" Python code in VS Code:
+  </p>
+          <div class="code-container">
+            <code>
+              <span class="function">print</span>("Hello World")
+            </code>
+          </div>
+        </section>
+        <section class="main-section" id="variables">
+          <header>Variables</header>
+          <p>A Python variable is a symbolic name that is a reference or pointer to an object. Once an object is assigned to a variable, you can refer to the object by that name.</p>   
+          <p>Rules for Python variables:</p>
+          <div class="note-container">
+            <ul>
+              <li>A variable name must start with a letter or the underscore character</li>
+              <li>A variable name cannot start with a number</li>
+              <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+              <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+            </ul>
+          </div>
+          <div class="code-container">
+            <code>
+              <span class="comment">#legal variable names:</span>
+              <br>myvar = <span class="string">"John"</span>
+              <br>my_var = <span class="string">"John"</span>
+              <br>_my_var = <span class="string">"John"</span>
+              <br>myVar = <span class="string">"John"</span>
+              <br>MYVAR = <span class="string">"John"</span>
+              <br>myvar2 = <span class="string">"John"</span>
+              <br>
+              <span class="comment">#illegal variable names:</span>
+              <br>2myvar = <span class="string">"John"</span>
+              <br>my-var = <span class="string">"John"</span>
+              <br>my var = <span class="string">"John"</span>
+            </code>
+          </div>
+        </section>
+        <section class="main-section" id="data_types">
+          <header>Data Types</header>
+          <p>Variables can store data of different types. Different types of data
+            do different things.
+          </p>
+          <p>Data types in Python belong to these categories:</p>
+          <div class="note-container">
+            <ul>
+              <li>Text Types: <span class="color">str</li>
+              <li>Numeric Types: <span class="color">int</span>, <span class="color">float</span>, <span class="color">complex</span></li>
+              <li>Sequence Types: <span class="color">list</span>, <span class="color">tuple</span>, <span class="color">range</span></li>
+              <li>Boolean Types: <span class="color">bool</span></li>
+              <li>Binary Types: <span class="color">bytes</span>, <span class="color">bytearray</span>, <span class="color">memoryview</span></li>
+              <li>None Types: <span class="color">NoneType</span></li>
+            <ul>
+          </div>
+          <p>To print the data type of the variable x</p>
+          <div class="code-container">
+            <code>
+              x = <span class="number">5</span>
+              <br><span class="function">print</span>(<span class="function">type</span>(x))
+            </code>
+          </div>
+        </section>
+        <section class="main-section" id="statements">
+          <header>Statements</header>
+          <p>Python supports the usual logical conditions from mathematics.</p>
+          <div class="note-container">
+            <ul>
+              <li>Equals: <span class="color">a == b</span></li>
+              <li>Not Equals: <span class="color">a != b</span></li>
+              <li>Less than: <span class="color">a < b</span></li>
+              <li>Less than or equal to: <span class="color">a <= b</span></li>
+              <li>Greater than: <span class="color">a > b</span></li>
+              <li>Greater than or equal to: <span class="color">a >= b</span></li>
+            </ul>
+          </div>
+          <p>These conditions can be used in different ways, such as in if statements, while loops, and for loops:</p>
+          <h4>if statements</h4>
+          <p>The if statement executes one set of code if a specified condition is met (true) or another set of code evaluates to false.</p>
+          <div class="code-container">
+            <code>
+              <span class="comment">#if statement:</span>
+              <br>a = <span class="number">10</span>
+              <br>b = <span class="number">15</span>
+              <br><span class="function">if</span> b > a<
+              <br>&nbsp;&nbsp;<span class="function">print</span>("b is greater than a")
+            </code>
+          </div>
+          <br>
+          <p>In the if statement example, there are two variables, <span class="color">a</span> and <span class="color">b</span>. The if statement tests to see whether <span class="color">b</span> is greater than <span class="color">a</span>. Since <span class="color">a</span> is <span class="color">10</span> and <span class="color">b</span> is <span class="color">15</span>, the output will be:</p>
+          <div class="code-container">
+            <code>
+              b is greater than a
+            </code>
+          </div>
+          <p>If the variables values were switched (<span class="color">a = 15</span> and <span class="color">b = 10</span>), then nothing will be printed since the conditions of the if statement is not met.</p>
+          <h4>while loops</h4>
+          <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
+          <div class="code-container">
+            <code>
+              <span class="comment">#while loop:</span>
+              <br>i = <span class="number">1</span>
+              <br><span class="function">while</span> i < 6
+              <br>&nbsp;&nbsp;<span class="function">print</span>(i)
+              <br>&nbsp;&nbsp;i += <span class="number">1</span>
+            </code>
+          </div>
+          <p>In the while loop example, there is a variable i, which is set to 1. while i is less than 6, the while loop will print the value of i, and then incrememnt i by 1. The loop will repeat until i is no longer less than 6. This means that the output of the above statement will be:</p>
+          <div class="code-container">
+            <code>
+              1<br>
+              2<br>
+              3<br>
+              4<br>
+              5<br>
+              6
+            </code>
+          </div>
+          <div class="note-container">
+            <p class="note"><span class="bold">Note:</span> remember to increment i, or else the loop will continue forever!</p>
+          </div>
+          <h4>for loops</h4>
+          <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
+          <div class="code-container">
+            <code>
+              <span class="comment">#for loop:</span>
+              <br>fruits = [<span class="string">"guava"</span>, <span class="string">"orange"</span>, <span class="string">"banana"</span>]
+              <br><span class="function">for </span>x<span class="function"> in </span>fruits:
+              <br>&nbsp;&nbsp;<span class="function">print</span>(x)
+            </code>
+          </div>
+          <p>In the while loop example, we have a list of fruits. The for loop goes through the fruits in the list, and then prints them out. The output of this statement will be:</p>
+          <div class="code-container">
+            <code>
+              guava<br>
+              orange<br>
+              banana
+            </code>
+          </div>
+          <div class="note-container">
+            <p class="note"><span class="bold">Note:</span> that the print function within the if statement, for loop, and while loop is indented. If it were not indented, an error will be raised. In other words, if statements require indentation!</p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+ </html> 
