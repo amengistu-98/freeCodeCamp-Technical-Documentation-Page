@@ -31,10 +31,10 @@
           <header>Hello World</header>
           <p>To get started, you will need to have a code editor and python installed. For this example, we will use VS Code. Go to this <a href="https://code.visualstudio.com/docs/python/python-tutorial">link</a> on VS Code's website and follow the instructions to download VS Code and Python.</p>
           <p>To get started with writing Python, write your first "Hello world" Python code in VS Code:
-  </p>
+          </p>
           <div class="code-container">
-            <code>
-              <span class="function">print</span>("Hello World")
+            <code
+            ><span class="function">print</span>("Hello World")
             </code>
           </div>
         </section>
@@ -44,26 +44,26 @@
           <p>Rules for Python variables:</p>
           <div class="note-container">
             <ul>
-              <li>A variable name must start with a letter or the underscore character</li>
-              <li>A variable name cannot start with a number</li>
-              <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
-              <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+              <li>&#x2022; A variable name must start with a letter or the underscore character</li>
+              <li>&#x2022; A variable name cannot start with a number</li>
+              <li>&#x2022; A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+              <li>&#x2022; Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
             </ul>
           </div>
           <div class="code-container">
-            <code>
-              <span class="comment">#legal variable names:</span>
-              <br>myvar = <span class="string">"John"</span>
-              <br>my_var = <span class="string">"John"</span>
-              <br>_my_var = <span class="string">"John"</span>
-              <br>myVar = <span class="string">"John"</span>
-              <br>MYVAR = <span class="string">"John"</span>
-              <br>myvar2 = <span class="string">"John"</span>
-              <br>
+            <code
+            ><span class="comment">#legal variable names:</span>
+              myvar = <span class="string">"John"</span>
+              my_var = <span class="string">"John"</span>
+              _my_var = <span class="string">"John"</span>
+              myVar = <span class="string">"John"</span>
+              MYVAR = <span class="string">"John"</span>
+              myvar2 = <span class="string">"John"</span>
+             
               <span class="comment">#illegal variable names:</span>
-              <br>2myvar = <span class="string">"John"</span>
-              <br>my-var = <span class="string">"John"</span>
-              <br>my var = <span class="string">"John"</span>
+              2myvar = <span class="string">"John"</span>
+              my-var = <span class="string">"John"</span>
+              my var = <span class="string">"John"</span>
             </code>
           </div>
         </section>
@@ -75,19 +75,19 @@
           <p>Data types in Python belong to these categories:</p>
           <div class="note-container">
             <ul>
-              <li>Text Types: <span class="color">str</li>
-              <li>Numeric Types: <span class="color">int</span>, <span class="color">float</span>, <span class="color">complex</span></li>
-              <li>Sequence Types: <span class="color">list</span>, <span class="color">tuple</span>, <span class="color">range</span></li>
-              <li>Boolean Types: <span class="color">bool</span></li>
-              <li>Binary Types: <span class="color">bytes</span>, <span class="color">bytearray</span>, <span class="color">memoryview</span></li>
-              <li>None Types: <span class="color">NoneType</span></li>
+              <li>&#x2022; Text Types: <span class="color">str</li>
+              <li>&#x2022; Numeric Types: <span class="color">int</span>, <span class="color">float</span>, <span class="color">complex</span></li>
+              <li>&#x2022; Sequence Types: <span class="color">list</span>, <span class="color">tuple</span>, <span class="color">range</span></li>
+              <li>&#x2022; Boolean Types: <span class="color">bool</span></li>
+              <li>&#x2022; Binary Types: <span class="color">bytes</span>, <span class="color">bytearray</span>, <span class="color">memoryview</span></li>
+              <li>&#x2022; None Types: <span class="color">NoneType</span></li>
             <ul>
           </div>
           <p>To print the data type of the variable x</p>
           <div class="code-container">
-            <code>
-              x = <span class="number">5</span>
-              <br><span class="function">print</span>(<span class="function">type</span>(x))
+            <code
+            >x = <span class="number">5</span>
+              <span class="function">print</span>(<span class="function">type</span>(x))
             </code>
           </div>
         </section>
@@ -96,53 +96,53 @@
           <p>Python supports the usual logical conditions from mathematics.</p>
           <div class="note-container">
             <ul>
-              <li>Equals: <span class="color">a == b</span></li>
-              <li>Not Equals: <span class="color">a != b</span></li>
-              <li>Less than: <span class="color">a < b</span></li>
-              <li>Less than or equal to: <span class="color">a <= b</span></li>
-              <li>Greater than: <span class="color">a > b</span></li>
-              <li>Greater than or equal to: <span class="color">a >= b</span></li>
+              <li>&#x2022; Equals: <span class="color">a == b</span></li>
+              <li>&#x2022; Not Equals: <span class="color">a != b</span></li>
+              <li>&#x2022; Less than: <span class="color">a < b</span></li>
+              <li>&#x2022; Less than or equal to: <span class="color">a <= b</span></li>
+              <li>&#x2022; Greater than: <span class="color">a > b</span></li>
+              <li>&#x2022; Greater than or equal to: <span class="color">a >= b</span></li>
             </ul>
           </div>
           <p>These conditions can be used in different ways, such as in if statements, while loops, and for loops:</p>
           <h4>if statements</h4>
           <p>The if statement executes one set of code if a specified condition is met (true) or another set of code evaluates to false.</p>
           <div class="code-container">
-            <code>
-              <span class="comment">#if statement:</span>
-              <br>a = <span class="number">10</span>
-              <br>b = <span class="number">15</span>
-              <br><span class="function">if</span> b > a<
-              <br>&nbsp;&nbsp;<span class="function">print</span>("b is greater than a")
+            <code
+            ><span class="comment">#if statement:</span>
+              a = <span class="number">10</span>
+              b = <span class="number">15</span>
+              <span class="function">if</span> b > a<
+              &nbsp;&nbsp;<span class="function">print</span>("b is greater than a")
             </code>
           </div>
           <br>
           <p>In the if statement example, there are two variables, <span class="color">a</span> and <span class="color">b</span>. The if statement tests to see whether <span class="color">b</span> is greater than <span class="color">a</span>. Since <span class="color">a</span> is <span class="color">10</span> and <span class="color">b</span> is <span class="color">15</span>, the output will be:</p>
           <div class="code-container">
-            <code>
-              b is greater than a
+            <code
+            >b is greater than a
             </code>
           </div>
           <p>If the variables values were switched (<span class="color">a = 15</span> and <span class="color">b = 10</span>), then nothing will be printed since the conditions of the if statement is not met.</p>
           <h4>while loops</h4>
           <p>With the while loop we can execute a set of statements as long as a condition is true.</p>
           <div class="code-container">
-            <code>
-              <span class="comment">#while loop:</span>
-              <br>i = <span class="number">1</span>
-              <br><span class="function">while</span> i < 6
-              <br>&nbsp;&nbsp;<span class="function">print</span>(i)
-              <br>&nbsp;&nbsp;i += <span class="number">1</span>
+            <code
+            ><span class="comment">#while loop:</span>
+              i = <span class="number">1</span>
+              <span class="function">while</span> i < 6
+              &nbsp;&nbsp;<span class="function">print</span>(i)
+              &nbsp;&nbsp;i += <span class="number">1</span>
             </code>
           </div>
           <p>In the while loop example, there is a variable i, which is set to 1. while i is less than 6, the while loop will print the value of i, and then incrememnt i by 1. The loop will repeat until i is no longer less than 6. This means that the output of the above statement will be:</p>
           <div class="code-container">
-            <code>
-              1<br>
-              2<br>
-              3<br>
-              4<br>
-              5<br>
+            <code
+            >1
+              2
+              3
+              4
+              5
               6
             </code>
           </div>
@@ -152,19 +152,19 @@
           <h4>for loops</h4>
           <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</p>
           <div class="code-container">
-            <code>
-              <span class="comment">#for loop:</span>
-              <br>fruits = [<span class="string">"guava"</span>, <span class="string">"orange"</span>, <span class="string">"banana"</span>]
-              <br><span class="function">for </span>x<span class="function"> in </span>fruits:
-              <br>&nbsp;&nbsp;<span class="function">print</span>(x)
+            <code
+            ><span class="comment">#for loop:</span>
+              fruits = [<span class="string">"guava"</span>, <span class="string">"orange"</span>, <span class="string">"banana"</span>]
+              <span class="function">for </span>x<span class="function"> in </span>fruits:
+              &nbsp;&nbsp;<span class="function">print</span>(x)
             </code>
           </div>
           <p>In the while loop example, we have a list of fruits. The for loop goes through the fruits in the list, and then prints them out. The output of this statement will be:</p>
           <div class="code-container">
-            <code>
-              guava<br>
-              orange<br>
-              banana
+            <code
+            >guava
+             orange
+             banana
             </code>
           </div>
           <div class="note-container">

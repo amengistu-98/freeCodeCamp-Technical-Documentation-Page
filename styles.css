@@ -1,9 +1,7 @@
 /* 
 Issues to resolve:
--in code blocks, the first element has a slight spacing in it
 -fixing up sidebar nav elements when screen width is adjusted to become small
 -misc cleanup before publishing to GitHub
--remove comments that were for troubleshooting
 */
 /* get rid of defaults */
 * {
@@ -46,6 +44,9 @@ Issues to resolve:
     cursor: pointer;
     font-size: 18px;
     transition: font-weight 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   /* adding hover effect to navbar */
   #navbar a:hover {
@@ -80,6 +81,7 @@ Issues to resolve:
     font-weight: bold;
     font-size: 25px;
     padding: 1 0;
+    text-shadow: 1px 1px 10px black;
   }
   section {
     margin-bottom: 20;
@@ -87,19 +89,41 @@ Issues to resolve:
   .bold {
     font-weight: bold;
   }
-  .code-container {
+  /* <code> and .note styling */
+  code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.2;
     background-color: black;
-    margin: 0px 25px;
     padding: 5px 20px;
-    width: 25%;
+    border: 2px solid #36B37E;
+    margin: 10px 25px;
+    min-width: 20vw;
+    width: 25vw;
     border-radius: 10px;
   }
-  code {
+  .note-container {
+    background-color: #42526E;
+    padding: 5px 10px;
+    min-width: 30vw;
+    width: 35vw;
+    border-radius: 10px;
+    margin: 10px 25px;
+    border: 2px solid #FFAB00;
+  }
+  .note-container > ul > li {
+    list-style-type: none;
+  }
+  .note {
     font-family: Roboto, sans-serif;
     color: #FAFBFC;
-    padding: 2px;
-    font-size: 105%; 
+    margin: 10px;
   }
+  /* colors for code */
   .comment {
     color: #36B37E;
   }
@@ -114,17 +138,6 @@ Issues to resolve:
   }
   .color {
     color: hotpink;
-  }
-  .note-container {
-    background-color: #42526E;
-    padding: 5px 20px;
-    width: 35%;
-    border-radius: 10px;
-    margin: 10px 25px;
-  }
-  .note {
-    font-family: Roboto, sans-serif;
-    color: #FAFBFC;
   }
   @media only screen and (max-width: 600px) {
     body {
